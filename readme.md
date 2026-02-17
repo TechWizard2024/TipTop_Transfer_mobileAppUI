@@ -25,5 +25,5 @@
 			UI_Description : Description basique de l'image UI_img_name
 			App_Config_variable : Variable ou donnée de configuration generale (app) basique pertinent pour l'UI de l'App
 			UI_Modification_Requested : Modifications à apporter à UI_img_name
-			UI_General_Modification_Requested_[Modification_App_wide] : Modifications à apporter à l'echelle de l'App
+			UI_General_Modification_Requested-Modification_App_wide : Modifications à apporter à l'echelle de l'App
 			Comment : Commentaire descriptif additionel de UI_img_name correspondant
