@@ -1,0 +1,57 @@
+
+------------------------
+Main.zip attached
+
+Les dossiers ci-dessous contienent des images de UI:
+Screenshot Wave = Main\Screenshot Wave
+Screenshot Wave Business = Main\Screenshot Wave Business
+Screenshot Wave Agent = Main\Screenshot Wave Agent
+
+Le fichier attatched App_Wave_UI_List.xlsx (attached) contient les colonnes ci-dessous:
+UI_ID
+UI_Name
+UI_img_name
+UI_Folder_name
+User_Target
+Target_App
+UI_Description
+App_Config_variable
+UI_Modification_Requested
+UI_General_Modification_Requested-Modification_App_wide
+Comment
+Base_URL_Folder
+Base_URL
+UI_img_URL
+
+Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
+
+En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
+Pour UI_ID > 9 et UI_ID non vide, Examiner les images UI screenshot_ui_name dans les dossiers Screenshot et pour chaque screenshot_ui_name = UI_img_name,
+Je veux que tu enregistre dans chaque colonnes correspondes le contenu / description approprié sur la base de l'exemple du contenu des colonnes des lignes UI_ID = 1 à 9
+
+
+-----------------------------------
+
+Le fichier https://ttt-mobileapp.fwh.is/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
+UI_ID
+UI_Name
+UI_img_name
+UI_Folder_name
+User_Target
+Target_App
+UI_Description
+App_Config_variable
+UI_Modification_Requested
+UI_General_Modification_Requested-Modification_App_wide
+Comment
+Base_URL_Folder
+Base_URL
+UI_img_URL
+
+Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
+
+En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
+Pour UI_ID > 9 et UI_ID non vide, Examiner l'image de chaque cellule de la colonne UI_img_URL ,
+Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colonne corresponde le contenu / description approprié sur la base de l'exemple des lignes UI_ID = 1 à 9
+
+

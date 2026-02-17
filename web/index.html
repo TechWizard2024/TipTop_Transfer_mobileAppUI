@@ -53,8 +53,29 @@ body{
 .subtitle{
     text-align:center;
     color:#ccc;
-    padding-bottom:20px;
+    padding-bottom:10px;
     font-size:14px;
+}
+
+/* download link */
+.download-link{
+    text-align:center;
+    padding-bottom:20px;
+}
+
+.download-link a{
+    display:inline-block;
+    background:linear-gradient(#33a6d6,#1c88b8);
+    color:white;
+    padding:10px 20px;
+    border-radius:4px;
+    text-decoration:none;
+    font-size:14px;
+    transition:background 0.2s;
+}
+
+.download-link a:hover{
+    background:linear-gradient(#3cb5e8,#1c88b8);
 }
 
 /* topbar */
@@ -162,9 +183,12 @@ body{
 
 <div class="wrapper">
 
-    <div class="header">
+<div class="header">
         <div class="title">TipTop Transfer</div>
         <div class="subtitle">Image Gallery</div>
+        <div class="download-link">
+            <a href="App_Wave_UI_List.xlsx" download>Download UI List (Excel)</a>
+        </div>
     </div>
 
     <div class="topbar"></div>
