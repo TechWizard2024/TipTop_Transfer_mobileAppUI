@@ -1,0 +1,174 @@
+UI_ID,UI_Name,UI_img_name,UI_Folder_name,User_Target,Target_App,UI_Description,App_Config_variable,UI_Modification_Requested,UI_General_Modification_Requested-Modification_App_wide,Comment,Base_URL_Folder,Base_URL,UI_img_URL
+1,Authentication_PIN,Screenshot_2026-02-11-19-40-54-891.jpg,Screenshot Wave,Customer,TipTop Transfer,Fenetre d'Authentication par code PIN avec bouton de suppression pour les telephones qui n'ont pas les capacités suivantes : empreinte digitale ; reconnaissance faciale,userPIN,,,les fenetres UI_Name = Authentication_PIN (Screenshot_2026-02-11-19-40-54-891.jpg) et UI_Name = Authentication_PIN_with_Fingerprint_opt (Screenshot_2026-02-11-19-40-54-892.jpg) sont similaires à l'exception du bouton de suppression dans Authentication_PIN qui est remplacé par un bouton de scan d'empreinte digitale ou bouton de scan faciale pour les telephones qui ont les capacités suivantes : empreinte digitale ; reconnaissance faciale ,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-40-54-891.jpg
+2,Authentication_PIN_with_Fingerprint_opt,Screenshot_2026-02-11-19-40-54-892.jpg,Screenshot Wave,Customer,TipTop Transfer,Fenetre d'Authentication par code PIN avec bouton de scan d'empreinte digitale ou bouton de scan faciale pour les telephones qui ont les capacités suivantes : empreinte digitale ; reconnaissance faciale,userPIN,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-40-54-892.jpg
+3,MainWindow_with_balance_visiblility_on,Screenshot_2026-02-11-19-49-54-891.jpg,Screenshot Wave,Customer,TipTop Transfer,"Page acceuil
+- Sur chaque fenetre de l'app il ya un padding de 2px  entre le body de l'app et les bords du telephone
+1- Section1 : Header niveau1
+   1-a- Bouton de paramètre en haut à gauche (icon)
+   1-b- Bouton de selection du compte utilisateur
+
+2- Section2 : Header niveau2 en dessous de Section1
+     Montant du Solde est visible suivi du symbole de la monnaie suivi d'une icone pour activer ou desactiver la visibilité du Monant du solde
+
+3- Section3 : Box en dessous de Section2 et 
+     Box1 rectangulaire bleu avec à l'interieur box2 contenant en noir sur fond blanc, le userAppQRCode et le mot ""Scanner"" precedé d'une icone d'appreil photo
+
+4- Section4 : Box en dessous de Section3
+     Boutons des services listés en ligne. 4 Boutons par ligne
+     Chaque bouton est une icone circulaire avec le nom du service en dessous
+
+5- Section5 : Box en dessous de Section4
+     Liste l'historique des transactions
+     Chaque ligne de transaction contient : 
+        - Sous-ligne1: 
+                -- (Aligner à gauche)  Nom du destinaire suivi de son numero (account_id)
+                -- (Aligner à droite)  Montant de la transaction suivi du symbole de la monnaie
+        - Sous-ligne2: 
+               -- (Aligner à gauche)  Date et Heure sous le format (11 fevr. 2026, 19:16)","1- Section1 : 
+    Bouton background color = section1_ Bouton_background_color = white 
+    Bouton Text color = section1_ Bouton_Text_color = dark blue
+
+2- Section2 :
+    Text color = section2_ Text_color = white
+    Icon color = section1_ Icon_color = white
+    montant du solde = user.user_profil.balance
+    symbole de la monnaie = user.user_profil.curreny
+
+3- Section3 : 
+    Box1 background color = section3_ Box1_background_color = blue
+    Box1 background image = section3_ Box1_background_image = ""/storage/img/ui/customer_card.png""
+    Box2 background image = section3_ Box2_background_image = ""/storage/img/qr_code/profil/qr_code-n.png""
+    Box2 text color = section3_ Box2_Text_color = black
+
+4- Section4 : 
+    Box background color = section4_ Box_background_color = white
+    Text color = section4_ Text_color = black
+    Icon-n background image = section4_ Icon-n_background_image = ""/storage/img/ui/Icon-n.png""
+
+5- Section5 :
+    Box background color = section5_ Box_background_color = white
+    Sous-ligne1 Text color = section5_ Text_color = dark blue
+    Sous-ligne2 Text color = section5_ Text_color = gray
+    liste de l'historique des transactions = user.user_profil.getLast20Transactions","
+1-b-Bouton de selection du type de compte/profil  userProfilType (Personal and Business) en haut à droite (Icon)
+
+5- Section5 : 
+     Liste l'historique des transactions
+     Ajouter à Chaque ligne de transaction : transaction_type_icon
+        - Sous-ligne1: 
+                -- (Aligner à gauche)  Icon du type de transaction (transaction_type_icon) suivi de Nom du destinaire suivi de son numero (account_id)
+                 transaction_type_icon : 
+                       - icon panier d'achat = transaction de type achat
+                       - icon flèches haut = transaction de type envoi d'argent
+                       - icon flèches bas = transaction de type reception d'argent
+        - Sous-ligne2: 
+               -- (Aligner à gauche)  Date et Heure sous le format (11 fevr. 2026, 19:16)","- Un padding de 2px est present entre le body de l'app et les bords du telephone
+
+- Créer un système de gestion de la navigation de l'utilisateur à l'interieur de l'app de sorte que si l'utisateur appuie sur le bouton de retour de son telephone, cela le ramène vers la fenetre precedente au lieu de le faire sortir complement de l'app",,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-49-54-891.jpg
+4,MainWindow_with_balance_visiblility_off,Screenshot_2026-02-11-19-50-25-695.jpg,Screenshot Wave,Customer,TipTop Transfer,Similaire à MainWindow_with_balance_visiblility_on (Screenshot_2026-02-11-19-49-54-891.jpg) Mais le bouton de visibilité du Montant du solde dans UI_Name = MainWindow_with_balance_visiblility_off qui est desactivé et le texte du solde qui est remplacé par 8 points,,,,Les fenetres UI_Name = MainWindow_with_balance_visiblility_on (Screenshot_2026-02-11-19-49-54-891.jpg) et UI_Name = MainWindow_with_balance_visiblility_off (Screenshot_2026-02-11-19-50-25-695.jpg) sont similaires à l'exception du bouton de visibilité du Montant du solde dans UI_Name = MainWindow_with_balance_visiblility_off qui est desactivé et le texte du solde qui est remplacé par 8 points,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-25-695.jpg
+5,MainWindow_TransactionsHistory_with_balance_visiblility_on,Screenshot_2026-02-11-19-50-26-695.jpg,Screenshot Wave,Customer,TipTop Transfer,MainWindow_with_balance_visiblility_on (Screenshot_2026-02-11-19-49-54-891.jpg) suite de la Section5 ( historique des transactions ) lorsque l'utilisateur scroll vers le bas avec ,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-26-695.jpg
+6,MainWindow_TransactionsHistory_with_balance_visiblility_off,Screenshot_2026-02-11-19-50-27-695.jpg,Screenshot Wave,Customer,TipTop Transfer,MainWindow_with_balance_visiblility_off (Screenshot_2026-02-11-19-50-25-695.jpg) suite de la Section5 ( historique des transactions ) lorsque l'utilisateur scroll vers le bas avec ,,,,Les fenetres UI_Name = MainWindow_TransactionsHistory_with_balance_visiblility_on (Screenshot_2026-02-11-19-50-26-695.jpg) et UI_Name = MainWindow_TransactionsHistory_with_balance_visiblility_off (Screenshot_2026-02-11-19-50-27-695.jpg) sont similaires à l'exception du bouton de visibilité du Montant du solde dans UI_Name = MainWindow_TransactionsHistory_with_balance_visiblility_off qui est desactivé et le texte du solde qui est remplacé par 8 points,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-27-695.jpg
+7,TransactionsHistoryWindows,Screenshot_2026-02-11-19-50-27-696.jpg,Screenshot Wave,Customer,TipTop Transfer,"Fenetre qui affiche la liste complete de l'historique des toutes les transactions de l'utilisateur lorsqu'il clique sur le bouton de recherche dans MainWindow_TransactionsHistory-Section5
+
+1- Section2 : Header niveau1 
+     Box Header de la fenetre TransactionsHistoryWindows contenant un bouton de retour a la fenetre precedente
+
+2- Section2 : Box en dessous de Section2 et 
+     Searchbox ou champ de recherche
+
+3- Section3 : Box en dessous de Section2
+     Boutons des produits ou services listés en ligne
+
+4- Section4 : Box en dessous de Section3
+     Liste l'historique des transactions
+     Chaque ligne de transaction contient : 
+        - Sous-ligne1: 
+                -- (Aligner à gauche)  Nom du destinaire suivi de son numero (account_id)
+                -- (Aligner à droite)  Montant de la transaction suivi du symbole de la monnaie
+        - Sous-ligne2: 
+               -- (Aligner à gauche)  Date et Heure sous le format (11 fevr. 2026, 19:16)","
+3- Section3 :
+    liste des produits ou services = user.user_profil.getAllProducts_Services
+     
+     ex  liste des produits ou services : Achat, Transfer
+
+    liste categories des paymentServiceProvider = user.user_profil.getAllCategoryOfPaymentServiceProvider
+
+     ex  liste categories des paymentServiceProvider : Mobile Money, compte_de_rechargement GSM ou Carrier_Bill, visa, mastercard, paypal
+
+    liste des paymentServiceProvider et leurs categories  = user.user_profil.getAllPaymentServiceProviderByCategory
+
+4- Section4 :
+    Box background color = section5_ Box_background_color = white
+    Sous-ligne1 Text color = section5_ Text_color = dark blue
+    Sous-ligne2 Text color = section5_ Text_color = gray
+    liste de l'historique des transactions = user.user_profil.getAllTransactions_PaginateInterval20","3- Section3 : Box en dessous de Section2
+     Chaque ligne liste le produit/service suivi des sous-composantes
+
+      Ex:
+          Ligne1 : Achat => Tranfer d'unité ;  Souscription Pass 
+          Ligne2 : Transfert d'argent => Mobile Money ;  Visa  ; Paypal ;  Stripe",,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-27-696.jpg
+8,TransactionsHistoryWindows_for_MoneyTransfer,Screenshot_2026-02-11-19-50-27-697.jpg,Screenshot Wave,Customer,TipTop Transfer,"TransactionsHistoryWindows qui affiche la liste complete de l'historique des toutes les transactions de l'utilisateur filtré sur les transferts d'argent (MoneyTransfer)
+Le bouton du Filtre est activé",activeFilter = MoneyTransfer,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-27-697.jpg
+9,TransactionsHistoryWindows_for_Bills,Screenshot_2026-02-11-19-50-27-698.jpg,Screenshot Wave,Customer,TipTop Transfer,"TransactionsHistoryWindows qui affiche la liste complete de l'historique des toutes les transactions de l'utilisateur filtré sur les Factures (Bills)
+Le bouton du Filtre est activé",activeFilter = Bills,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-27-698.jpg
+10,,Screenshot_2026-02-11-19-50-27-891.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-27-891.jpg
+11,,Screenshot_2026-02-11-19-50-42-139.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-50-42-139.jpg
+12,,Screenshot_2026-02-11-19-51-00-818.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-51-00-818.jpg
+13,,Screenshot_2026-02-11-19-51-28-144.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-51-28-144.jpg
+14,,Screenshot_2026-02-11-19-52-13-105.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-52-13-105.jpg
+15,,Screenshot_2026-02-11-19-52-14-105.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-52-14-105.jpg
+16,,Screenshot_2026-02-11-19-52-49-013.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-52-49-013.jpg
+17,,Screenshot_2026-02-11-19-53-37-106.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-53-37-106.jpg
+18,,Screenshot_2026-02-11-19-53-57-285.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-53-57-285.jpg
+19,,Screenshot_2026-02-11-19-55-31-617.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-55-31-617.jpg
+20,,Screenshot_2026-02-11-19-55-50-453.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-19-55-50-453.jpg
+21,,Screenshot_2026-02-11-20-00-54-346.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-20-00-54-346.jpg
+22,,Screenshot_2026-02-11-20-01-54-346.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-20-01-54-346.jpg
+23,,Screenshot_2026-02-11-20-10-32-614.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-20-10-32-614.jpg
+24,,Screenshot_2026-02-11-20-12-54-806.jpg,Screenshot Wave,Customer,TipTop Transfer,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave/Screenshot_2026-02-11-20-12-54-806.jpg
+25,,Screenshot_2026-02-11-20-21-02-946.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-02-946.jpg
+26,,Screenshot_2026-02-11-20-21-02-946.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-02-946.jpg
+27,,Screenshot_2026-02-11-20-21-02-947.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-02-947.jpg
+28,,Screenshot_2026-02-11-20-21-02-947.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-02-947.jpg
+29,,Screenshot_2026-02-11-20-21-03-947.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-03-947.jpg
+30,,Screenshot_2026-02-11-20-21-03-947.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-21-03-947.jpg
+31,,Screenshot_2026-02-11-20-33-44-368.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-33-44-368.jpg
+32,,Screenshot_2026-02-11-20-33-44-368.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-33-44-368.jpg
+33,,Screenshot_2026-02-11-20-34-38-661.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-34-38-661.jpg
+34,,Screenshot_2026-02-11-20-34-38-661.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-34-38-661.jpg
+35,,Screenshot_2026-02-11-20-35-21-128.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-35-21-128.jpg
+36,,Screenshot_2026-02-11-20-35-21-128.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-35-21-128.jpg
+37,,Screenshot_2026-02-11-20-35-45-135.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-35-45-135.jpg
+38,,Screenshot_2026-02-11-20-35-45-135.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-35-45-135.jpg
+39,,Screenshot_2026-02-11-20-36-32-694.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-36-32-694.jpg
+40,,Screenshot_2026-02-11-20-36-32-694.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-36-32-694.jpg
+41,,Screenshot_2026-02-11-20-36-58-564.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-36-58-564.jpg
+42,,Screenshot_2026-02-11-20-36-58-564.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-36-58-564.jpg
+43,,Screenshot_2026-02-11-20-37-38-253.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-37-38-253.jpg
+44,,Screenshot_2026-02-11-20-37-38-253.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-37-38-253.jpg
+45,,Screenshot_2026-02-11-20-38-19-059.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-38-19-059.jpg
+46,,Screenshot_2026-02-11-20-38-19-059.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-38-19-059.jpg
+47,,Screenshot_2026-02-11-20-38-19-060.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-38-19-060.jpg
+48,,Screenshot_2026-02-11-20-38-19-060.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-38-19-060.jpg
+49,,Screenshot_2026-02-11-20-39-12-571.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-12-571.jpg
+50,,Screenshot_2026-02-11-20-39-12-571.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-12-571.jpg
+51,,Screenshot_2026-02-11-20-39-33-459.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-33-459.jpg
+52,,Screenshot_2026-02-11-20-39-33-459.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-33-459.jpg
+53,,Screenshot_2026-02-11-20-39-34-459.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-34-459.jpg
+54,,Screenshot_2026-02-11-20-39-34-459.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-39-34-459.jpg
+55,,Screenshot_2026-02-11-20-43-31-709.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-43-31-709.jpg
+56,,Screenshot_2026-02-11-20-43-31-709.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-43-31-709.jpg
+57,,Screenshot_2026-02-11-20-44-01-526.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-44-01-526.jpg
+58,,Screenshot_2026-02-11-20-44-01-526.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-44-01-526.jpg
+59,,Screenshot_2026-02-11-20-44-43-362.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-44-43-362.jpg
+60,,Screenshot_2026-02-11-20-44-43-362.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-44-43-362.jpg
+61,,Screenshot_2026-02-11-20-46-20-070.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-46-20-070.jpg
+62,,Screenshot_2026-02-11-20-46-20-070.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-46-20-070.jpg
+63,,Screenshot_2026-02-11-20-46-20-071.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-46-20-071.jpg
+64,,Screenshot_2026-02-11-20-46-20-071.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-46-20-071.jpg
+65,,Screenshot_2026-02-11-20-47-53-039.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-47-53-039.jpg
+66,,Screenshot_2026-02-11-20-47-53-039.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-47-53-039.jpg
+67,,Screenshot_2026-02-11-20-48-14-287.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-48-14-287.jpg
+68,,Screenshot_2026-02-11-20-48-14-287.jpg,Screenshot Wave Business,Business,TipTop Transfer Business,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Business/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Business/Screenshot_2026-02-11-20-48-14-287.jpg
+69,,Screenshot_2026-02-11-20-49-30-036.jpg,Screenshot Wave Agent,Agent,TipTop Transfer Agent,,,,,,https://ttt-mobileapp.fwh.is/Main/,Screenshot%20Wave%20Agent/,https://ttt-mobileapp.fwh.is/Main/Screenshot%20Wave%20Agent/Screenshot_2026-02-11-20-49-30-036.jpg
