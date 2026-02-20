@@ -56,7 +56,7 @@ Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colo
 
 -----------------------------------
 
-Le fichier https://ttt-mobileapp.fwh.is/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
+Le fichier https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
 UI_ID
 UI_Name
 UI_img_name
@@ -87,9 +87,40 @@ Pour tous les UI_ID (1 à 69), Ajouter les colonnes DeepseekRaw_UI_Description e
 
 -----------------------------------
 
-- UI_Description
-- App_Config_variable
-- DeepseekRaw_UI_Description-Flutter
-- DeepseekRaw_App_Config_variable-Flutter
-- DeepseekRaw_UI_Description-EyeView
-- DeepseekRaw_App_Config_variable-EyeView
+Le fichier https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
+UI_ID
+UI_Name
+UI_img_name
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+UI_Folder_name
+User_Target
+Target_App
+UI_Description
+App_Config_variable
+DeepseekRaw_UI_Description-Flutter
+DeepseekRaw_App_Config_variable-Flutter
+DeepseekRaw_UI_Description-EyeView
+DeepseekRaw_App_Config_variable-EyeView
+DeepseekRaw_UI_Description-UnifiedView
+DeepseekRaw_App_Config_variable-UnifiedView
+UI_Modification_Requested
+UI_General_Modification_Requested-Modification_App_wide
+Comment
+Base_URL
+Base_URL_Folder
+UI_img_URL
+
+
+Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
+
+En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
+
+Task1:
+Pour UI_ID > 9 et UI_ID non vide, Examiner l'image de chaque cellule de la colonne UI_img_URL ,
+Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colonne corresponde le contenu / description approprié sur la base de l'exemple des lignes UI_ID = 1 à 9
+
+Task2:
+Pour tous les UI_ID (1 à 69), Ajouter les colonnes DeepseekRaw_UI_Description et DeepseekRaw_App_Config_variable entre App_Config_variable et UI_Modification_Requested
+- Dans DeepseekRaw_UI_Description, Deepseek donnera la description du Screenshot de UI UI_img_name exactement comme Deepseek voit le UI pour reconscruire ce UI avec flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- Dans DeepseekRaw_App_Config_variable, Deepseek donnera dans les categories (app, server, utilisateur) le variable de configuration generale (app, server, utilisateur)
