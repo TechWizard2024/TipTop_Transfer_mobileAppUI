@@ -21,6 +21,10 @@
         <div class="download-link">
             <a href="storage/excel/App_Wave_UI_List.xlsx" download>Download UI List (Excel)</a>
             <br>
+            <br>
+            <a href="storage/excel/Feuil4-Unified_Build.xlsx" download>Download Feuil4-Unified_Build UI List (Excel)</a>
+            <br>
+            <br>
             <a href="feuil4-unified_build.php">View Unified Build</a>
         </div>
     </div>

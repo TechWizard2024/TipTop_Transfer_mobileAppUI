@@ -86,8 +86,9 @@ Pour tous les UI_ID (1 à 69), Ajouter les colonnes DeepseekRaw_UI_Description e
 - Dans DeepseekRaw_App_Config_variable, Deepseek donnera dans les categories (app, server, utilisateur) le variable de configuration generale (app, server, utilisateur)
 
 -----------------------------------
+J'ai un fichier dans les differentes references ci-dessous (le meme ficheir) de description des UI : 
 
-Le fichier https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
+Le fichier de https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
 UI_ID
 UI_Name
 UI_img_name
@@ -111,6 +112,8 @@ Base_URL
 Base_URL_Folder
 UI_img_URL
 
+
+##Description de colonnes
 
 Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
 
