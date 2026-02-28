@@ -1,6 +1,6 @@
 <?php
 // TipTop Transfer - Image Gallery
-// This file uses PHP to dynamically list screenshots
+// This file uses PHP to dynamically list screenshots and files
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,6 +9,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 <title>TipTop Transfer - Image Gallery</title>
 <link rel="stylesheet" href="ressources/css/style.css">
+<link rel="stylesheet" href="ressources/css/file-grid.css">
 </head>
 
 <body>
@@ -19,11 +20,26 @@
         <div class="title">TipTop Transfer</div>
         <div class="subtitle">Image Gallery</div>
         <div class="download-link">
-            <a href="storage/excel/App_Wave_UI_List.xlsx" download>Download UI List (Excel)</a>
-            <br>
-            <br>
-            <a href="storage/excel/Feuil4-Unified_Build.xlsx" download>Download Feuil4-Unified_Build UI List (Excel)</a>
-            <br>
+            <?php
+            include 'list_files.php';
+            ?>
+            <div class="file-grid">
+            <?php
+            foreach ($filesByExtension as $extension => $files) {
+                $label = getExtensionLabel($extension);
+                echo '<div class="file-section">';
+                echo '<h3>' . getFileIcon($extension) . ' ' . $label . ' Files</h3>';
+                echo '<ul class="file-list">';
+                foreach ($files as $file) {
+                    $viewerUrl = getViewerUrl($extension, $file['relative_path']);
+                    $fileName = htmlspecialchars($file['name']);
+                    echo '<li><a href="' . $viewerUrl . '">' . $fileName . '</a></li>';
+                }
+                echo '</ul>';
+                echo '</div>';
+            }
+            ?>
+            </div>
             <br>
             <a href="feuil4-unified_build.php">View Unified Build</a>
         </div>

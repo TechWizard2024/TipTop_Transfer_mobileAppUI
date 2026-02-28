@@ -1,94 +1,59 @@
 
-------------------------
-Main.zip attached
-
-Les dossiers ci-dessous contienent des images de UI:
-Screenshot Wave = Main\Screenshot Wave
-Screenshot Wave Business = Main\Screenshot Wave Business
-Screenshot Wave Agent = Main\Screenshot Wave Agent
-
-Le fichier attatched App_Wave_UI_List.xlsx (attached) contient les colonnes ci-dessous:
-UI_ID
-UI_Name
-UI_img_name
-UI_Folder_name
-User_Target
-Target_App
-UI_Description
-App_Config_variable
-UI_Modification_Requested
-UI_General_Modification_Requested-Modification_App_wide
-Comment
-Base_URL_Folder
-Base_URL
-UI_img_URL
-
-Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
-
-En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
-Pour UI_ID > 9 et UI_ID non vide, Examiner les images UI screenshot_ui_name dans les dossiers Screenshot et pour chaque screenshot_ui_name = UI_img_name,
-Je veux que tu enregistre dans chaque colonnes correspondes le contenu / description approprié sur la base de l'exemple du contenu des colonnes des lignes UI_ID = 1 à 9
-
+---------------------------
+screenshot.zip est un zip du dossier screenshot contenant les sous-dossier et fichier ci-dessous : 
+Feuil4-Unified_Build.xlsx
+BlueStacks
+Screenshot Moov-CI
+Screenshot Wave
+Screenshot Wave Agent
+Screenshot Wave Business
 
 -----------------------------------
 
-Le fichier https://ttt-mobileapp.fwh.is/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
-UI_ID
-UI_Name
-UI_img_name
-UI_Folder_name
-User_Target
-Target_App
-UI_Description
-App_Config_variable
-UI_Modification_Requested
-UI_General_Modification_Requested-Modification_App_wide
-Comment
+J'ai un fichier excel Feuil4-Unified_Build.xlsx present dans les differentes references ci-dessous (le meme fichier) de description des UI : 
+- Fichier joint Feuil4-Unified_Build.xlsx
+- URL1 (Format Telechargemeable): https://ttt-mobileapp.fwh.is/storage/excel/Feuil4-Unified_Build.xlsx
+- URL2 (Format Tableau html): https://ttt-mobileapp.fwh.is/feuil4-unified_build.php
+
+Chaque ligne du fichier excel Feuil4-Unified_Build contient (dans les colonnes ci-dessous) la description d'un seul UI :
+UI_ID : ID du UI
+UI_Name : Nom du UI
+UI_img_name : Nom de l'image de l'UI
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+UI_Folder_name : Nom du dossier contenant l'image de l'UI
+User_Target : Nom du Type de profil utilisateur (userProfilType) cible
+Target_App : Nom de l'App (TipTop Transfer ou TipTop Transfer Business ou TipTop Transfer Agent) où le UI_img_name correspondant, est applicable
+UI_Description : Description basique de l'image UI_img_name par moi-meme
+App_Config_variable : Variable ou donnée de configuration generale (app) basique pertinent pour l'UI de l'App
+AI-Raw_UI_Description-Flutter : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI pour reconscruire ce UI dans un contexte flutter
+AI-Raw_App_Config_variable-Flutter : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-Flutter
+AI-Raw_UI_Description-EyeView : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI (EyeView)
+AI-Raw_App_Config_variable-EyeView : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-EyeView
+AI-Raw_UI_Description-UnifiedView
+AI-Raw_App_Config_variable-UnifiedView
+UI_Modification_Requested : Modifications à apporter à UI_img_URL
+UI_General_Modification_Requested-Modification_App_wide : Modifications à apporter à l'echelle de l'App
+Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) : Liste (par tiret -) de Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+Solutions_for_Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) :  Liste (par tiret -) de Solution aux Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12) 
+Comment : Commentaire descriptif additionel de UI_img_name correspondant
+Base_URL 
 Base_URL_Folder
-Base_URL
-UI_img_URL
+UI_img_URL : URL de l'image de l'UI
 
-Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
 
-En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
-Pour UI_ID > 9 et UI_ID non vide, Examiner l'image de chaque cellule de la colonne UI_img_URL ,
-Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colonne corresponde le contenu / description approprié sur la base de l'exemple des lignes UI_ID = 1 à 9
+-------------
 
------------------------------------
+Pour chaque ligne du fichier excel Feuil4-Unified_Build où le contenu de la cellule My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name == "Pas OK" :
 
-Le fichier https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
-UI_ID
-UI_Name
-UI_img_name
-UI_Folder_name
-User_Target
-Target_App
-UI_Description
-App_Config_variable
-UI_Modification_Requested
-UI_General_Modification_Requested-Modification_App_wide
-Comment
-Base_URL_Folder
-Base_URL
-UI_img_URL
+- Sur la base de l'exemple du contenu des lignes où le contenu de la cellule My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name est different de "OK"
 
-Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
+Task: 
+- Lire le contenu de la cellule correspondante My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+- Traiter/Executer les observations contenues dans la cellule correspondante My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
 
-En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
-
-Task1:
-Pour UI_ID > 9 et UI_ID non vide, Examiner l'image de chaque cellule de la colonne UI_img_URL ,
-Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colonne corresponde le contenu / description approprié sur la base de l'exemple des lignes UI_ID = 1 à 9
-
-Task2:
-Pour tous les UI_ID (1 à 69), Ajouter les colonnes DeepseekRaw_UI_Description et DeepseekRaw_App_Config_variable entre App_Config_variable et UI_Modification_Requested
-- Dans DeepseekRaw_UI_Description, Deepseek donnera la description du Screenshot de UI UI_img_name exactement comme Deepseek voit le UI pour reconscruire ce UI avec flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
-- Dans DeepseekRaw_App_Config_variable, Deepseek donnera dans les categories (app, server, utilisateur) le variable de configuration generale (app, server, utilisateur)
-
------------------------------------
-J'ai un fichier dans les differentes references ci-dessous (le meme ficheir) de description des UI : 
-
-Le fichier de https://ttt-mobileapp.fwh.is/storage/excel/App_Wave_UI_List.xlsx contient les colonnes ci-dessous:
+Liste des UI_ID cible = { 3, 4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	18,	22,	23,	24,	25,	26,	27,	28,	30,	31,	31,	32,	33,	34,	35,	36,	37,	38,	39,	40,	41,	42,	43 }
+Donner traiter chaque ligne et donner le resultat final dans un tableau complet avec les colonnes ci-dessous:
 UI_ID
 UI_Name
 UI_img_name
@@ -99,31 +64,151 @@ User_Target
 Target_App
 UI_Description
 App_Config_variable
-DeepseekRaw_UI_Description-Flutter
-DeepseekRaw_App_Config_variable-Flutter
-DeepseekRaw_UI_Description-EyeView
-DeepseekRaw_App_Config_variable-EyeView
-DeepseekRaw_UI_Description-UnifiedView
-DeepseekRaw_App_Config_variable-UnifiedView
+AI-Raw_UI_Description-Flutter
+AI-Raw_App_Config_variable-Flutter
+AI-Raw_UI_Description-EyeView
+AI-Raw_App_Config_variable-EyeView
+AI-Raw_UI_Description-UnifiedView
+AI-Raw_App_Config_variable-UnifiedView
 UI_Modification_Requested
 UI_General_Modification_Requested-Modification_App_wide
+Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) 
+Solutions_for_Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )
 Comment
 Base_URL
 Base_URL_Folder
 UI_img_URL
 
 
-##Description de colonnes
+Enregistrer le tableau dans un fichier excel Feuil4-Processing-Claude.xlsx
 
-Soit screenshot_ui_name le nom chaque image contenu dans les dossiers Screenshot
+Ex: Pour UI_ID = 3; My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name == "Pas OK" ; 
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name = {
+- UI_Description : Match the corresponding UI_img_name
+- App_Config_variable : Need to be updated and improved as much as possible
+- AI-Raw_UI_Description-Flutter : Need to be provided
+- AI-Raw_App_Config_variable-Flutter : Need to be provided
+- AI-Raw_UI_Description-EyeView : Need to be provided
+- AI-Raw_App_Config_variable-EyeView : Need to be provided
+}
+Le traitement consistera pour chaque colonne à : 
+- UI_Description : Pas de traitement necessaire
+- App_Config_variable : Mettre à jour cette cellule et ameliorer le contenu au tant que possible sur la base du UI_Description correspondant
+- AI-Raw_UI_Description-Flutter : Donner une Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI pour reconscruire ce UI dans un contexte flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-Flutter : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-Flutter correspondant
+- AI-Raw_UI_Description-EyeView :  Donner une Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI  (EyeView) (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-EyeView : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-EyeView correspondant
 
-En prenant exemple sur les lignes UI_ID = 1 à 9 de App_Wave_UI_List.xlsx;
 
-Task1:
-Pour UI_ID > 9 et UI_ID non vide, Examiner l'image de chaque cellule de la colonne UI_img_URL ,
-Je veux que tu cree App_Wave_UI_List2.xlsx et que tu enregistre dans chaque colonne corresponde le contenu / description approprié sur la base de l'exemple des lignes UI_ID = 1 à 9
+###################################################################################
 
-Task2:
-Pour tous les UI_ID (1 à 69), Ajouter les colonnes DeepseekRaw_UI_Description et DeepseekRaw_App_Config_variable entre App_Config_variable et UI_Modification_Requested
-- Dans DeepseekRaw_UI_Description, Deepseek donnera la description du Screenshot de UI UI_img_name exactement comme Deepseek voit le UI pour reconscruire ce UI avec flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
-- Dans DeepseekRaw_App_Config_variable, Deepseek donnera dans les categories (app, server, utilisateur) le variable de configuration generale (app, server, utilisateur)
+---------------------------
+screenshot.zip est un zip du dossier screenshot contenant les sous-dossier et fichier ci-dessous : 
+Feuil4-Unified_Build.xlsx
+BlueStacks
+Screenshot Moov-CI
+Screenshot Wave
+Screenshot Wave Agent
+Screenshot Wave Business
+
+-----------------------------------
+
+J'ai un fichier excel Feuil4-Unified_Build.xlsx present dans les differentes references ci-dessous (le meme fichier) de description des UI : 
+- Fichier joint Feuil4-Unified_Build.xlsx
+- URL1 (Format Telechargemeable): https://ttt-mobileapp.fwh.is/storage/excel/Feuil4-Unified_Build.xlsx
+- URL2 (Format Tableau html): https://ttt-mobileapp.fwh.is/feuil4-unified_build.php
+
+Chaque ligne du fichier excel Feuil4-Unified_Build contient (dans les colonnes ci-dessous) la description d'un seul UI :
+UI_ID : ID du UI
+UI_Name : Nom du UI
+UI_img_name : Nom de l'image de l'UI
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+UI_Folder_name : Nom du dossier contenant l'image de l'UI
+User_Target : Nom du Type de profil utilisateur (userProfilType) cible
+Target_App : Nom de l'App (TipTop Transfer ou TipTop Transfer Business ou TipTop Transfer Agent) où le UI_img_name correspondant, est applicable
+UI_Description : Description basique de l'image UI_img_name par moi-meme
+App_Config_variable : Variable ou donnée de configuration generale (app) basique pertinent pour l'UI de l'App
+AI-Raw_UI_Description-Flutter : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI pour reconscruire ce UI dans un contexte flutter
+AI-Raw_App_Config_variable-Flutter : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-Flutter
+AI-Raw_UI_Description-EyeView : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI (EyeView)
+AI-Raw_App_Config_variable-EyeView : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-EyeView
+AI-Raw_UI_Description-UnifiedView
+AI-Raw_App_Config_variable-UnifiedView
+UI_Modification_Requested : Modifications à apporter à UI_img_URL
+UI_General_Modification_Requested-Modification_App_wide : Modifications à apporter à l'echelle de l'App
+Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) : Liste (par tiret -) de Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+Solutions_for_Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) :  Liste (par tiret -) de Solution aux Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+Comment : Commentaire descriptif additionel de UI_img_name correspondant
+Base_URL 
+Base_URL_Folder
+UI_img_URL : URL de l'image de l'UI
+
+
+-------------
+
+Pour chaque ligne du fichier excel Feuil4-Unified_Build où le contenu de la cellule My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name == "Pas OK" :
+
+- Sur la base de l'exemple du contenu des lignes où le contenu de la cellule My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name est different de "OK"
+
+Task1: 
+- Liste des UI_ID cible = { 3, 4,	5,	6,	7,	8,	9,	10,	11,	12,	13,	18,	22,	23,	24,	25,	26,	27,	28,	30,	31,	31,	32,	33,	34,	35,	36,	37,	38,	39,	40,	41,	42,	43 }
+- Lire le contenu de la cellule correspondante My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+- Traiter/Executer les observations contenues dans la cellule correspondante My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+
+
+Ex: Pour UI_ID = 3; My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name == "Pas OK" ; 
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name = {
+- UI_Description : Match the corresponding UI_img_name
+- App_Config_variable : Need to be updated and improved as much as possible
+- AI-Raw_UI_Description-Flutter : Need to be provided
+- AI-Raw_App_Config_variable-Flutter : Need to be provided
+- AI-Raw_UI_Description-EyeView : Need to be provided
+- AI-Raw_App_Config_variable-EyeView : Need to be provided
+}
+Le traitement consistera pour chaque colonne à : 
+- UI_Description : Pas de traitement necessaire
+- App_Config_variable : Mettre à jour cette cellule et ameliorer le contenu au tant que possible sur la base du UI_Description correspondant
+- AI-Raw_UI_Description-Flutter : Donner une Description du Screenshot de UI UI_img_URL exactement comme l'IA Claude voit le UI pour reconscruire ce UI dans un contexte flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-Flutter : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-Flutter correspondant
+- AI-Raw_UI_Description-EyeView :  Donner une Description du Screenshot de UI UI_img_URL exactement comme l'IA Claude voit le UI  (EyeView) (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-EyeView : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-EyeView correspondant
+
+
+Task2: 
+- Liste des UI_ID cible = Tous les UI_ID
+Sur la base d'information collectés pour UI_Description et App_Config_variable ; Pour chaque UI_ID : 
+- Dans la cellule correspondante de la colonne "Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )" ; Lister (par tiret -) les Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+- Dans la cellule correspondante de la colonne "Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )" ; Lister (par tiret -) les Solution aux Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+
+---------
+
+Traiter chaque ligne et donner le resultat final dans un tableau complet avec les colonnes ci-dessous:
+UI_ID
+UI_Name
+UI_img_name
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+UI_Folder_name
+User_Target
+Target_App
+UI_Description
+App_Config_variable
+AI-Raw_UI_Description-Flutter
+AI-Raw_App_Config_variable-Flutter
+AI-Raw_UI_Description-EyeView
+AI-Raw_App_Config_variable-EyeView
+AI-Raw_UI_Description-UnifiedView
+AI-Raw_App_Config_variable-UnifiedView
+UI_Modification_Requested
+UI_General_Modification_Requested-Modification_App_wide
+Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )
+Solutions_for_Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )
+Comment
+Base_URL
+Base_URL_Folder
+UI_img_URL
+
+
+Enregistrer le tableau dans un fichier excel Feuil4-Processing2-Claude.xlsx
+
