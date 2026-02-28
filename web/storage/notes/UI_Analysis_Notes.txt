@@ -212,3 +212,70 @@ UI_img_URL
 
 Enregistrer le tableau dans un fichier excel Feuil4-Processing2-Claude.xlsx
 
+
+
+
+###################################################################################
+
+---------------------------
+screenshot.zip est un zip du dossier screenshot contenant les sous-dossier et fichier ci-dessous : 
+Feuil4-Processing-Empty.xlsx
+BlueStacks
+Screenshot Moov-CI
+Screenshot Wave
+Screenshot Wave Agent
+Screenshot Wave Business
+
+-----------------------------------
+
+J'ai un fichier excel Feuil4-Processing-Empty.xlsx present dans les differentes references ci-dessous (le meme fichier) de description des UI : 
+- Fichier joint Feuil4-Processing-Empty.xlsx
+- URL1 (Format Telechargemeable): https://ttt-mobileapp.fwh.is/storage/excel/Feuil4-Processing-Empty.xlsx
+- URL2 (Format Tableau html): https://ttt-mobileapp.fwh.is/feuil4-processing_empty.php
+
+Chaque ligne du fichier excel Feuil4-Processing-Empty contient (dans les colonnes ci-dessous) la description d'un seul UI :
+UI_ID : ID du UI
+UI_Name : Nom du UI
+UI_img_name : Nom de l'image de l'UI
+My_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+My_Short_Observation_On_Deepseek_Processing_Compared_MyView_On_UI_img_name
+UI_Folder_name : Nom du dossier contenant l'image de l'UI
+User_Target : Nom du Type de profil utilisateur (userProfilType) cible
+Target_App : Nom de l'App (TipTop Transfer ou TipTop Transfer Business ou TipTop Transfer Agent) où le UI_img_name correspondant, est applicable
+UI_Description : Description basique de l'image UI_img_name par moi-meme
+App_Config_variable : Variable ou donnée de configuration generale (app) basique pertinent pour l'UI de l'App
+AI-Raw_UI_Description-Flutter : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI pour reconscruire ce UI dans un contexte flutter
+AI-Raw_App_Config_variable-Flutter : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-Flutter
+AI-Raw_UI_Description-EyeView : Description du Screenshot de UI UI_img_URL exactement comme Deepseek voit le UI (EyeView)
+AI-Raw_App_Config_variable-EyeView : Description de variables de configuration generale (dans les categories app, server, utilisateur) à partir de AI-Raw_UI_Description-EyeView
+AI-Raw_UI_Description-UnifiedView
+AI-Raw_App_Config_variable-UnifiedView
+UI_Modification_Requested : Modifications à apporter à UI_img_URL
+UI_General_Modification_Requested-Modification_App_wide : Modifications à apporter à l'echelle de l'App
+Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) : Liste (par tiret -) de Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+Solutions_for_Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 ) :  Liste (par tiret -) de Solution aux Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+Comment : Commentaire descriptif additionel de UI_img_name correspondant
+Base_URL 
+Base_URL_Folder
+UI_img_URL : URL de l'image de l'UI
+
+
+-------------
+
+Pour chaque ligne du fichier excel Feuil4-Processing-Empty  :
+
+Task1: 
+- Liste des UI_ID cible = Tous les UI_ID
+
+- AI-Raw_UI_Description-Flutter : Donner une Description du Screenshot de UI UI_img_URL exactement comme l'IA Claude voit le UI pour reconscruire ce UI dans un contexte flutter (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-Flutter : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-Flutter correspondant
+- AI-Raw_UI_Description-EyeView :  Donner une Description du Screenshot de UI UI_img_URL exactement comme l'IA Claude voit le UI  (EyeView) (inclure tous les details visible sur l'UI; sans ignorer ou manquer aucun detail)
+- AI-Raw_App_Config_variable-EyeView : Lister et decrire les variables de configuration generale (dans les categories app, server, utilisateur) à partir du AI-Raw_UI_Description-EyeView correspondant
+
+- Dans la cellule correspondante de la colonne "Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )" ; Lister (par tiret -) les Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+- Dans la cellule correspondante de la colonne "Potential_Compatibility_Issues_for_Device_with_Old_OS ( Android >= 10 ; iOS>= 12 )" ; Lister (par tiret -) les Solution aux Problèmes potentiels de compatibilité pour les smartphones fonctionnant sous d'anciens systèmes d'exploitation (Android >= 10 ; iOS >= 12)
+
+---------
+
+Enregistrer le resulat dans le tableau puis dans un fichier excel Feuil4-Processing-Empty-1.xlsx
+
