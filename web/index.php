@@ -25,6 +25,17 @@
             ?>
             <div class="file-grid">
             <?php
+            // Add a section for view files
+            echo '<div class="file-section">';
+            echo '<h3>🔧 Viewers</h3>';
+            echo '<ul class="file-list">';
+            echo '<li><a href="views/view_excel.php">Excel Viewer</a></li>';
+            echo '<li><a href="views/view_word.php">Word Viewer</a></li>';
+            echo '<li><a href="views/view_yaml.php">YAML Viewer</a></li>';
+            echo '<li><a href="views/view_text.php">Text Viewer</a></li>';
+            echo '</ul>';
+            echo '</div>';
+            
             foreach ($filesByExtension as $extension => $files) {
                 $label = getExtensionLabel($extension);
                 echo '<div class="file-section">';
@@ -39,7 +50,6 @@
                 echo '</div>';
             }
             ?>
-            </div>
             <br>
             <a href="feuil4-unified_build.php">View Unified Build</a>
         </div>

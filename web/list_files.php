@@ -106,29 +106,31 @@ foreach ($allFiles as $file) {
 
 // Define viewer URL based on extension
 function getViewerUrl($extension, $filePath) {
-    $encodedPath = urlencode($filePath);
+    // Strip "storage/" prefix from path since view files add it automatically
+    $shortPath = preg_replace('|^storage/|', '', $filePath);
+    $encodedPath = urlencode($shortPath);
     
     switch ($extension) {
         case 'xlsx':
         case 'xls':
-            return 'view_excel.php?file=' . $encodedPath;
+            return 'views/view_excel.php?file=' . $encodedPath;
         case 'docx':
-            return 'view_word.php?file=' . $encodedPath;
+            return 'views/view_word.php?file=' . $encodedPath;
         case 'yaml':
         case 'yml':
-            return 'view_yaml.php?file=' . $encodedPath;
+            return 'views/view_yaml.php?file=' . $encodedPath;
         case 'txt':
-            return 'view_text.php?file=' . $encodedPath;
+            return 'views/view_text.php?file=' . $encodedPath;
         case 'jpg':
         case 'jpeg':
         case 'png':
         case 'gif':
         case 'webp':
-            return $encodedPath;
+            return $filePath;
         case 'zip':
-            return $encodedPath;
+            return $filePath;
         default:
-            return $encodedPath;
+            return $filePath;
     }
 }
 

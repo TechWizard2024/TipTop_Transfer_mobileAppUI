@@ -1,0 +1,17 @@
+#cloud-config
+hostname: k3os-server
+ssh_authorized_keys:
+  - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...
+k3s_args: server
+k3s_token: mysecuretoken123
+k3s_extra_args:
+  - "--no-deploy=servicelb"   # optional: disable default load balancer
+users:
+  - name: ubuntu
+    sudo: ["ALL=(ALL) NOPASSWD:ALL"]
+    ssh_authorized_keys:
+      - ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC...
+network:
+  interfaces:
+    - name: eth0
+      dhcp: true
