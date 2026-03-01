@@ -106,9 +106,7 @@ foreach ($allFiles as $file) {
 
 // Define viewer URL based on extension
 function getViewerUrl($extension, $filePath) {
-    // Strip "storage/" prefix from path since view files add it automatically
-    $shortPath = preg_replace('|^storage/|', '', $filePath);
-    $encodedPath = urlencode($shortPath);
+    $encodedPath = urlencode($filePath);
     
     switch ($extension) {
         case 'xlsx':
@@ -126,11 +124,11 @@ function getViewerUrl($extension, $filePath) {
         case 'png':
         case 'gif':
         case 'webp':
-            return $filePath;
+            return $encodedPath;
         case 'zip':
-            return $filePath;
+            return $encodedPath;
         default:
-            return $filePath;
+            return $encodedPath;
     }
 }
 

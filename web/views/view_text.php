@@ -59,7 +59,7 @@ $content = file_get_contents($realPath);
             <div class="title">Text Viewer</div>
             <div class="subtitle"><?php echo htmlspecialchars($title); ?></div>
             <div class="download-link">
-                <a href="<?php echo htmlspecialchars($file); ?>" download>Download Original File</a>
+                <a href="<?php echo htmlspecialchars($filePath); ?>" download>Download Original File</a>
                 <br><br>
                 <a href="../index.php">← Back to Gallery</a>
             </div>

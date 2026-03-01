@@ -14,7 +14,6 @@ $filePath = $file;
 
 // If path contains Windows drive letter or full path, try to extract relative path
 if (preg_match('/^([A-Za-z]:\\\\|\\\\)/', $filePath)) {
-    // This is a Windows absolute path - try to extract the relative part
     $filePath = str_replace('\\', '/', $filePath);
     if (preg_match('/\/mobileAppUI\/web\/(.+)$/i', $filePath, $matches)) {
         $filePath = $matches[1];
@@ -31,7 +30,7 @@ $realPath = realpath(__DIR__ . '/../' . $filePath);
 $storagePath = realpath(__DIR__ . '/../storage');
 
 if (!$realPath || strpos($realPath, $storagePath) !== 0) {
-    die('Invalid file path: ' . htmlspecialchars($filePath));
+    die('Invalid file path');
 }
 
 if (!file_exists($realPath)) {
@@ -65,7 +64,7 @@ $content = file_get_contents($realPath);
             <div class="title">YAML Viewer</div>
             <div class="subtitle"><?php echo htmlspecialchars($title); ?></div>
             <div class="download-link">
-                <a href="<?php echo htmlspecialchars($file); ?>" download>Download Original File</a>
+                <a href="<?php echo htmlspecialchars($filePath); ?>" download>Download Original File</a>
                 <br><br>
                 <a href="../index.php">← Back to Gallery</a>
             </div>
